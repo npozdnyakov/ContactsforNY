@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFTNYC2023 Contacts</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .container {
+      max-width: calc(100% - 200px);
+      margin: 0 auto;
+      padding: 20px;
+    }
+    #url {
+      width: 100%;
+      max-width: 350px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mb-4">NFTNYC 2023 Contacts</h1>
+    <div class="mb-3">
+      <label for="url" class="form-label">Enter URL:</label>
+      <input type="text" class="form-control" id="url" placeholder="i.e. enter https://www.nft.nyc/speakers/gaming">
+    </div>
+    <button id="getContacts" class="btn btn-primary mb-4">Get contacts</button>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Twitter</th>
+        </tr>
+      </thead>
+      <tbody id="results">
+      </tbody>
+    </table>
+  </div>
+  <script src="parser.js"></script>
+</body>
+</html>
